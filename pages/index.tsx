@@ -49,7 +49,7 @@ const Home = ({projects, services, content}:Props) => {
 
 export default Home
 
-export const getStaticProps:GetStaticProps = async (context) => {
+export const getServerSideProps:GetStaticProps = async (context) => {
   const projects = await fetchProjects()
   const content = await fetchContent()
   const services = await fetchServices()
