@@ -1,7 +1,5 @@
-import type { GetStaticProps, NextPage } from 'next'
+import type { GetServerSideProps } from 'next'
 import Head from 'next/head'
-import Header from '../components/Header'
-import Intro from '../components/Intro'
 import Services from '../components/Services'
 import Mission from '../components/Mission'
 import Projects from '../components/Projects'
@@ -49,7 +47,7 @@ const Home = ({projects, services, content}:Props) => {
 
 export default Home
 
-export const getServerSideProps:GetStaticProps = async (context) => {
+export const getServerSideProps:GetServerSideProps = async (context) => {
   const projects = await fetchProjects()
   const content = await fetchContent()
   const services = await fetchServices()
