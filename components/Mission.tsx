@@ -9,7 +9,7 @@ interface Props {
 
 function Mission({ developmentTitle, developmentDescription }: Props) {
   return (
-    <div className="flex px-12 md:px-16  py-10 md:py-16 flex-col md:flex-row">
+    <div className="flex  py-10 md:py-16 flex-col md:flex-row">
       <LeftMission />
       <RightMisson
         developmentTitle={developmentTitle}
