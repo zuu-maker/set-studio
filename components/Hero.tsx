@@ -1,13 +1,13 @@
-import React from 'react'
-import { Content } from '../typings'
-import Header from './Header'
-import Intro from './Intro'
+import React from "react";
+import { Content } from "../typings";
+import Header from "./Header";
+import Intro from "./Intro";
 
-interface Props{
-    content:Content
+interface Props {
+  content: Content;
 }
 
-function Hero({content}:Props) {
+function Hero({ content }: Props) {
   return (
     <div className="relative bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto">
@@ -22,7 +22,7 @@ function Hero({content}:Props) {
             <polygon points="50,0 100,0 50,100 0,100" />
           </svg>
 
-         <Header/>
+          <Header />
 
           <Intro
             titleTop={content.topTitle}
@@ -39,7 +39,7 @@ function Hero({content}:Props) {
         />
       </div>
     </div>
-  )
+  );
 }
 
-export default Hero
+export default Hero;
