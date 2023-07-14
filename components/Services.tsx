@@ -14,7 +14,7 @@ interface Props {
 
 function Services({ services }: Props) {
   return (
-    <div id="service-div" className="px-16 py-24 ">
+    <div id="service-div" className="px-6 md:px-16 py-24 ">
       <div className="flex flex-col md:flex-row justify-between">
         {services.map((s) => (
           <ServiceComponent key={s._id} service={s} />
